@@ -1,0 +1,20 @@
+{
+  "name": "omegle.js",
+  "description": "A nodejs omegle library",
+  "version": "0.0.3",
+  "license": "MIT",
+  "keywords": ["omegle", "nodejs"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxb3/omegle.js"
+  },
+  "type": "module",
+  "files": ["lib/OmegleClient.js"],
+  "scripts": {
+    "start": "node test/index.js",
+    "dev": "nodemon test/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
