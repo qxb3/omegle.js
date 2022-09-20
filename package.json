@@ -9,7 +9,10 @@
     "url": "https://github.com/qxb3/omegle.js"
   },
   "type": "module",
-  "files": ["lib/OmegleClient.js"],
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.mjs"
+  },
   "scripts": {
     "start": "node test/index.js",
     "dev": "nodemon test/index.js"
