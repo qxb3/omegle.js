@@ -36,6 +36,81 @@ client.connect({
 })
 ```
 
+# Docs
+
+## OmegleClient
+
+### options
+
+<ul>
+  <li>
+    defaultLang (String) <br>
+     - The default language that the client will be using <br>
+  </li>
+
+  <li>
+    debug (Boolean) <br>
+     - Will print out the events if set to true
+  </li>
+</ul>
+
+### properties
+
+<ul>
+  <li>
+    connected <br>
+     - If connected <br>
+     Returns: Boolean
+  </li>
+
+  <li>
+    messages <br>
+     - The messages of the current session <br>
+     Returns: Array&lt;String&gt;
+  </li>
+
+  <li>
+    typing <br>
+     - If the client is currently typing <br>
+     Returns: Boolean
+  </li>
+</ul>
+
+
+### methods
+
+<ul>
+  <li>
+    connect(options) <br>
+     - Connect the client <br>
+     Options:
+     <ul>
+       <li>lang (String)</li>
+       <li>topics (Array&lt;String&gt;)</li>
+     </ul>
+  </li>
+
+  <li>
+    disconnect() <br>
+     - Disconnect the client
+  </li>
+
+  <li>
+    sendMessage(message) <br>
+     - Send a message to current session
+  </li>
+
+  <li>
+    startTyping() <br>
+     - Sends a typing indicator
+  </li>
+
+  <li>
+    stopTyping() <br>
+     - Stops a typing indicator
+  </li>
+</ul>
+
 # Contributing
 
 Feel free to make the library better by forking and making a pull request :>
