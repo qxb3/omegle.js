@@ -111,6 +111,18 @@ client.connect({
   </li>
 </ul>
 
+### events
+
+<ul>
+  <li>connected</li>
+  <li>disconnected</li>
+  <li>message (Params: message)</li>
+  <li>typing</li>
+  <li>stoppedtyping</li>
+</ul>
+
+And probably more but i forget :/
+
 # Contributing
 
 Feel free to make the library better by forking and making a pull request :>
