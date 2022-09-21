@@ -109,6 +109,12 @@ client.connect({
     stopTyping() <br>
      - Stops a typing indicator
   </li>
+
+  <li>
+    listen(event) <br>
+     - Listen to a event
+  </li>
+
 </ul>
 
 ### events
