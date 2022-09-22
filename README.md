@@ -111,7 +111,7 @@ client.connect({
   </li>
 
   <li>
-    listen(event) <br>
+    on(event) <br>
      - Listen to a event
   </li>
 
