@@ -18,8 +18,7 @@ yarn add omegle.js
 # Example
 
 ```js
-const OmegleClient = require('omegle.js')
-// Or import OmegleClient from 'omegle.js'
+import OmegleClient from 'omegle.js'
 
 const client = new OmegleClient()
 
