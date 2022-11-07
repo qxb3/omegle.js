@@ -24,4 +24,3 @@ client.on('disconnected', () => {
 })
 
 client.connect()
-client.connect()
