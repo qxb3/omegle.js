@@ -23,4 +23,5 @@ client.on('disconnected', () => {
   clearInterval(interval)
 })
 
-client.connect({ topics: ['friend', 'friends'] })
+client.connect()
+client.connect()
