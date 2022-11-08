@@ -1,26 +1,30 @@
 import OmegleClient from '../lib/OmegleClient.js'
 
-const client = new OmegleClient()
-let interval
+const client = new OmegleClient({
+  debug: true
+})
 
-client.on('connected', () => {
-  console.log('Connected')
-  client.sendMessage(`Hello! I will copy everything that you say!`)
+client.on('connected', (s) => {
+  console.log('Connected', s)
+})
 
-  interval = setInterval(() => {
-    console.log(client.messages)
-  }, 1000)
+client.on('typing', () => {
+  client.startTyping()
+  console.log('Typing')
+})
+
+client.on('stoppedTyping', () => {
+  console.log('Stopped Typing')
 })
 
 client.on('message', (message) => {
+  client.stopTyping()
   console.log(message)
-  client.sendMessage(message)
 })
 
 client.on('disconnected', () => {
   console.log('Disconnected')
   client.connect({ topics: ['friend', 'friends'] })
-  clearInterval(interval)
 })
 
-client.connect()
+client.connect({ topics: ['friend', 'gaming'] })
