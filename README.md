@@ -1,6 +1,6 @@
 # omegle.js
 
-A nodejs omegle library
+Interact with omegle using node.js
 
 # NOTE
 
