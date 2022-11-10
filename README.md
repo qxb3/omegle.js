@@ -43,13 +43,15 @@ client.connect({
 
 <ul>
   <li>
-    defaultLang (String) <br>
-     - The default language that the client will be using <br>
+    debug (boolean) <br>
+     - Will print out the events if set to true
+    `Default: false`
   </li>
 
   <li>
-    debug (Boolean) <br>
-     - Will print out the events if set to true
+    server (string) <br>
+    - Sets the server api the client will be using
+    `Default: https://front10.omegle.com`
   </li>
 </ul>
 
@@ -58,20 +60,20 @@ client.connect({
 <ul>
   <li>
     connected <br>
-     - If connected <br>
-     Returns: Boolean
+     - Connection state will set to true if connected <br>
+     `Returns: Boolean`
   </li>
 
   <li>
     messages <br>
      - The messages of the current session <br>
-     Returns: Array&lt;String&gt;
+     `Returns: Array&lt;String&gt;`
   </li>
 
   <li>
     typing <br>
      - If the client is currently typing <br>
-     Returns: Boolean
+     `Returns: Boolean`
   </li>
 </ul>
 
@@ -84,8 +86,15 @@ client.connect({
      - Connect the client <br>
      Options:
      <ul>
-       <li>lang (String)</li>
-       <li>topics (Array&lt;String&gt;)</li>
+       <li>
+        lang (String) <br>
+        `Default: 'en'`
+       </li>
+
+       <li>
+          topics (Array&lt;String&gt;)
+          `Default: []`
+        </li>
      </ul>
   </li>
 
@@ -95,7 +104,7 @@ client.connect({
   </li>
 
   <li>
-    sendMessage(message) <br>
+    sendMessage(message: string) <br>
      - Send a message to current session
   </li>
 
@@ -110,7 +119,7 @@ client.connect({
   </li>
 
   <li>
-    on(event) <br>
+    on(event: string, callback: function) <br>
      - Listen to a event
   </li>
 
@@ -119,11 +128,23 @@ client.connect({
 ### events
 
 <ul>
-  <li>connected</li>
+  <li>
+    connected <br>
+    `Params:` <br>
+    (commonLikes?: Array&lt;String&gt;)
+  </li>
+
   <li>disconnected</li>
-  <li>message (Params: message)</li>
+
+  <li>
+    message <br>
+    `Params:` <br>
+    (message: string)
+  </li>
+
   <li>typing</li>
-  <li>stoppedtyping</li>
+
+  <li>stoppedTyping</li>
 </ul>
 
 And probably more but i forget :/

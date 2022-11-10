@@ -1,7 +1,7 @@
 {
   "name": "omegle.js",
   "description": "Interact with omegle using node.js",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "keywords": ["omegle", "nodejs"],
   "repository": {
