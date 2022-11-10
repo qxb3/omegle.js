@@ -9,7 +9,7 @@ There is too much scam bots in omegle already, we dont need another one
 
 # Installation
 
-```
+```bash
 npm install omegle.js
 # Or
 yarn add omegle.js
@@ -27,7 +27,7 @@ client.on('connected', () => {
 })
 
 client.on('message', (message) => {
-  message.sendMessage(`[BOT] ${message}`)
+  message.sendMessage([BOT] ${message})
 })
 
 client.connect({
@@ -41,113 +41,74 @@ client.connect({
 
 ### options
 
-<ul>
-  <li>
-    debug (boolean) <br>
-     - Will print out the events if set to true
-    `Default: false`
-  </li>
+* debug (boolean) <br>
+\- Will print out the events if set to true <br>
+Default: false
 
-  <li>
-    server (string) <br>
-    - Sets the server api the client will be using
-    `Default: https://front10.omegle.com`
-  </li>
-</ul>
+* server (string) <br>
+\- Sets the server api the client will be using <br>
+Default: 'https://front10.omegle.com'
 
 ### properties
 
-<ul>
-  <li>
-    connected <br>
-     - Connection state will set to true if connected <br>
-     `Returns: Boolean`
-  </li>
+* connected <br>
+\- Connection state will set to true if connected <br>
+Returns: Boolean
 
-  <li>
-    messages <br>
-     - The messages of the current session <br>
-     `Returns: Array&lt;String&gt;`
-  </li>
+* messages <br>
+\- The messages of the current session <br>
+Returns: Array&lt;String&gt;
 
-  <li>
-    typing <br>
-     - If the client is currently typing <br>
-     `Returns: Boolean`
-  </li>
-</ul>
-
+* typing <br>
+\- If the client is currently typing <br>
+Returns: Boolean
 
 ### methods
 
-<ul>
-  <li>
-    connect(options) <br>
-     - Connect the client <br>
-     Options:
-     <ul>
-       <li>
-        lang (String) <br>
-        `Default: 'en'`
-       </li>
+* connect(options) <br>
+\- Connect the client <br>
+Options:
+  * lang (string) <br>
+    Default: 'en'
 
-       <li>
-          topics (Array&lt;String&gt;)
-          `Default: []`
-        </li>
-     </ul>
-  </li>
+  * topics (Array&lt;String&gt;) <br>
+    Default: []
 
-  <li>
-    disconnect() <br>
-     - Disconnect the client
-  </li>
+* disconnect() <br>
+\- Disconnect the client
 
-  <li>
-    sendMessage(message: string) <br>
-     - Send a message to current session
-  </li>
+* sendMessage(message: string) <br>
+\- Send a message to current session
 
-  <li>
-    startTyping() <br>
-     - Sends a typing indicator
-  </li>
+* startTyping() <br>
+\- Sends a typing indicator
 
-  <li>
-    stopTyping() <br>
-     - Stops a typing indicator
-  </li>
+* stopTyping() <br>
+\- Stops a typing indicator
 
-  <li>
-    on(event: string, callback: function) <br>
-     - Listen to a event
-  </li>
-
-</ul>
+* on(event: string, callback: function) <br>
+\- Listen to a event
 
 ### events
 
-<ul>
-  <li>
-    connected <br>
-    `Params:` <br>
-    (commonLikes?: Array&lt;String&gt;)
-  </li>
+* connected <br>
+\- Fires when the client is connected <br>
+Params: <br>
+(commonLikes?: Array&lt;String&gt;)
 
-  <li>disconnected</li>
+* disconnected <br>
+\- Fires when the client is disconnected <br>
 
-  <li>
-    message <br>
-    `Params:` <br>
-    (message: string)
-  </li>
+* message <br>
+\- Fires when the stranger send a message <br>
+Params: <br>
+(message: string)
 
-  <li>typing</li>
+* typing <br>
+\- Fires when the stranger is typing
 
-  <li>stoppedTyping</li>
-</ul>
-
-And probably more but i forget :/
+* stoppedTyping
+\- Fires when the stranger stopped typing
 
 # Contributing
 
