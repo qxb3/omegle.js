@@ -2,6 +2,11 @@
 
 Interact with omegle using node.js
 
+![GitHub](https://img.shields.io/github/license/qxb3/omegle.js)
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/qxb3/omegle.js?color=blue&filename=package.json)
+![Github](https://img.shields.io/badge/language-javascript-yellow)
+![Github](https://img.shields.io/badge/contribution-welcome-red)
+
 # NOTE
 
 Please dont use this to abuse omegle.
