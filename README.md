@@ -24,6 +24,7 @@ yarn add omegle.js
 
 ```js
 import OmegleClient from 'omegle.js'
+// or const OmegleClient = require('omegle.js')
 
 const client = new OmegleClient()
 
@@ -32,7 +33,7 @@ client.on('connected', () => {
 })
 
 client.on('message', (message) => {
-  message.sendMessage([BOT] ${message})
+  message.sendMessage(`[BOT] ${message}`)
 })
 
 client.connect({
@@ -112,7 +113,7 @@ Params: <br>
 * typing <br>
 \- Fires when the stranger is typing
 
-* stoppedTyping
+* stoppedTyping <br>
 \- Fires when the stranger stopped typing
 
 # Contributing
