@@ -3,21 +3,29 @@
   "description": "Interact with omegle using node.js",
   "version": "0.0.13",
   "license": "MIT",
-  "keywords": ["omegle", "nodejs"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qxb3/omegle.js"
-  },
   "type": "module",
+  "main": "lib/index.js",
   "exports": {
-    "require": "./lib/index.cjs",
-    "import": "./lib/index.mjs"
+    "default": "./build/index.cjs",
+    "require": "./build/index.cjs",
+    "import": "./build/index.js"
   },
   "scripts": {
-    "start": "node test/index.js",
-    "dev": "nodemon test/index.js"
+    "build": "tsup",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0"
+  },
+  "keywords": [
+    "omegle",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxb3/omegle.js"
   }
 }

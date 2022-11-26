@@ -1,4 +1,4 @@
-import OmegleClient from '../lib/OmegleClient.js'
+import OmegleClient from '../build/index.js'
 
 const client = new OmegleClient({
   debug: true
