@@ -47,73 +47,73 @@ client.connect({
 
 ### options
 
-* debug (boolean) <br>
+* `debug` (boolean) <br>
 \- Will print out the events if set to true <br>
-Default: false
+Default: `false`
 
-* server (string) <br>
+* `server` (string) <br>
 \- Sets the server api the client will be using <br>
-Default: 'https://front10.omegle.com'
+Default: `https://front10.omegle.com`
 
 ### properties
 
-* connected <br>
+* `connected` <br>
 \- Connection state will set to true if connected <br>
-Returns: Boolean
+Returns: `boolean`
 
-* messages <br>
+* `messages` <br>
 \- The messages of the current session <br>
-Returns: Array&lt;String&gt;
+Returns: `Array<string>`
 
-* typing <br>
+* `typing` <br>
 \- If the client is currently typing <br>
-Returns: Boolean
+Returns: `boolean`
 
 ### methods
 
-* connect(options) <br>
+* `connect(options)` <br>
 \- Connect the client <br>
 Options:
-  * lang (string) <br>
-    Default: 'en'
+  * `lang` (string) <br>
+    Default: `en`
 
-  * topics (Array&lt;String&gt;) <br>
-    Default: []
+  * `topics` (Array&lt;String&gt;) <br>
+    Default: `[]`
 
-* disconnect() <br>
+* `disconnect()` <br>
 \- Disconnect the client
 
-* sendMessage(message: string) <br>
-\- Send a message to current session
+* `sendMessage(message: string)` <br>
+\- Send a message
 
-* startTyping() <br>
-\- Sends a typing indicator
+* `startTyping()` <br>
+\- Send a typing indicator
 
-* stopTyping() <br>
-\- Stops a typing indicator
+* `stopTyping()` <br>
+\- Stop a typing indicator
 
-* on(event: string, callback: function) <br>
+* `on(event: string, callback: function)` <br>
 \- Listen to a event
 
 ### events
 
-* connected <br>
+* `connected` <br>
 \- Fires when the client is connected <br>
-Params: <br>
-(commonLikes?: Array&lt;String&gt;)
+  * Params:
+    `(commonLikes?: Array<string>)`
 
-* disconnected <br>
+* `disconnected` <br>
 \- Fires when the client is disconnected <br>
 
-* message <br>
+* `message` <br>
 \- Fires when the stranger send a message <br>
-Params: <br>
-(message: string)
+  * Params:
+    `(message: string)`
 
-* typing <br>
+* `typing` <br>
 \- Fires when the stranger is typing
 
-* stoppedTyping <br>
+* `stoppedTyping` <br>
 \- Fires when the stranger stopped typing
 
 # Contributing
