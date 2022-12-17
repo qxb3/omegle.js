@@ -33,7 +33,7 @@ client.on('connected', () => {
 })
 
 client.on('message', (message) => {
-  message.sendMessage(`[BOT] ${message}`)
+  client.sendMessage(`[BOT] ${message}`)
 })
 
 client.connect({
