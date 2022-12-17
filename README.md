@@ -12,7 +12,10 @@ Interact with omegle using node.js
 Please dont use this to abuse omegle.
 There is too much scam bots in omegle already, we dont need another one
 
+
 # Installation
+
+> Must have node v14.0.0 or later
 
 ```bash
 npm install omegle.js
