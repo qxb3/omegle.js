@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "lint": "eslint ."
   },
   "dependencies": {
     "axios": "^0.27.2"
