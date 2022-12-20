@@ -106,7 +106,7 @@ var OmegleClient = class extends import_events.default {
             this.emit("typing");
             break;
           case "stoppedtyping":
-            this.emit("stoppedtyping");
+            this.emit("stoppedTyping");
             break;
           case "strangerDisconnected":
             this._reset();
