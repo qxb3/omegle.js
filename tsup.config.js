@@ -4,7 +4,7 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   clean: true,
   esbuildOptions: (options) => {
-   options.footer = {
+    options.footer = {
       js: 'module.exports = module.exports.default;'
     }
   },
