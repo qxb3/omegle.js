@@ -13,8 +13,9 @@
   "scripts": {
     "build": "tsup --dts",
     "dev": "tsup --watch",
+    "lint": "eslint .",
     "prepublishOnly": "yarn build",
-    "lint": "eslint ."
+    "prepare": "husky install"
   },
   "dependencies": {
     "axios": "^0.27.2"
