@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/qxb3/omegle.js/compare/v1.0.0...v1.1.0) (2022-12-22)
+
+
+### Features
+
+* added dts & build steps ([08b1e4d](https://github.com/qxb3/omegle.js/commit/08b1e4d9ced67cc40dcf4c562df496eee2b89044))
+
 ## 1.0.0 (2022-12-20)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "omegle.js",
   "description": "Create omegle bots using node.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
